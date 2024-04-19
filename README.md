@@ -1,22 +1,22 @@
 # MMM-uv-index
-UV Index from openweathermap.org for MagicMirror²
 
-[MagicMirror Project on Github](https://github.com/MichMich/MagicMirror)
+UV Index from openweathermap.org for [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror).
 
-![Preview Image](image.png)
+![screenshot](image.png)
 
 ## Usage 
 
 To use this module, go to the *modules* subfolder of your mirror and clone this repository. You will need a subscription to the Openweathermap OneCall API 3.0. The first 1000 calls are free, so personal use should incur no cost. Set the rate limit to 999 per day to make sure you don't get charged, even if the module or MagicMirror were to get stuck in a loop somehow.
-```
-git clone https://github.com/Sketusky/MMM-uv-index
+
+```bash
+git clone https://github.com/thariq-shanavas/MMM-uv-index
 ```
 
 ### Configuration
 
 To run the module, you need to add the following data to your config.js file.
 
-```
+```js
 {
   module: 'MMM-uv-index',
   position: 'bottom_right',
@@ -41,18 +41,23 @@ You may want to set the following options in the config section as well:
 | `updateInterval` | How often would you like to update data? (Miliseconds)<br><br>**Default value:** `3600000` (1 hour)<br>[Used Scale](https://www.epa.gov/sunsafety/uv-index-scale-1)| 
 
 ## Supported languages
-English<br>
-Dutch<br>
-Polish<br>
-<br>
-Feel free to open new issue and submit translation for your langauge!
+
+- English
+- Dutch
+- Polish
+
+Feel free to open new issue and submit translation for your language!
 
 ## Known Issues
 
 
 ## Changelog
+
 ### 1.0.1 - 07.05.2018
-Added Dutch language [ISSUE](https://github.com/Sketusky/MMM-uv-index/issues/1)<br>
-Introduced changelog and version information
+
+- Added Dutch language [ISSUE](https://github.com/Sketusky/MMM-uv-index/issues/1)
+- Introduced changelog and version information
+
 ### 1.0.0 - 03.05.2018
-First working version of module
+
+- First working version of module
