@@ -125,27 +125,25 @@ Module.register("MMM-uv-index", {
         var self = this;
         var retry = true;
 
-        var uvRequest = new XMLHttpRequest();
-        uvRequest.open("GET", url, true);
-        uvRequest.onreadystatechange = function() {
-            if (this.readyState === 4) {
-                if (this.status === 200) {
-                    self.processUV(JSON.parse(this.response));
-                } else if (this.status === 401) {
-                    self.updateDom(self.config.animationSpeed);
-
-                    Log.error(self.name + ": Incorrect APPID.");
-                    retry = true;
-                } else {
-                    Log.error(self.name + ": Could not load uv.");
-                }
-
-                if (retry) {
-                    self.scheduleUpdate((self.loaded) ? -1 : self.config.retryDelay);
-                }
+        try {
+            const response = await fetch(url);
+            if (response.ok) {
+            const data = await response.json();
+            self.processUV(data);
+            } else if (response.status === 401) {
+            self.updateDom(self.config.animationSpeed);
+            Log.error(self.name + ": Incorrect APPID.");
+            retry = true;
+            } else {
+            Log.error(self.name + ": Could not load uv.");
             }
-        };
-        uvRequest.send();
+        } catch (error) {
+            Log.error(self.name + ": Could not load uv. " + error);
+        }
+
+        if (retry) {
+            self.scheduleUpdate((self.loaded) ? -1 : self.config.retryDelay);
+        }
     },
 
     getParams: function() {
