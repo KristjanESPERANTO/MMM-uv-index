@@ -50,8 +50,11 @@ Feel free to open new issue and submit translation for your language!
 
 ## Known Issues
 
-
 ## Changelog
+
+### 2.0.0 - 03.07.2023
+
+- Update to OneCall API 3.0
 
 ### 1.0.1 - 07.05.2018
 

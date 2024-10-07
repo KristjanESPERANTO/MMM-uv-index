@@ -1,6 +1,6 @@
 /* Magic Mirror
  * Module: MMM-uv-index
- * Version: 1.0.1
+ * Version: 2.0.0
  *
  * By Piotr Kucharski (https://github.com/Sketusky/MMM-uv-index)
  * MIT Licensed.
