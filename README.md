@@ -34,13 +34,13 @@ To run the module, you need to add the following data to your `config.js` file.
 
 You may want to set the following options in the config section as well:
 
-| Option |  Description | 
+| Option | Description |
 |---|---|
-| `lat` | Lattitude value from your location to show UV Index.<br><br>This is **REQUIRED**. | 
-| `lon` | Longtitude value from your location to show UV Index.<br><br>This is **REQUIRED**. | 
-| `animationSpeed` | Speed of the update animation. (Milliseconds)<br><br>**Possible values:** `0` to `5000`<br>**Default value:** `1000` (1 second) | 
-| `colors` | Makes UV scale name colorful<br><br>**Possible values:** `true` or `false`<br>**Default value:** `true` | 
-| `updateInterval` | How often would you like to update data? (Miliseconds)<br><br>**Default value:** `3600000` (1 hour)<br>[Used Scale](https://www.epa.gov/sunsafety/uv-index-scale-1)| 
+| `lat` | Lattitude value from your location to show UV index.<br><br>This is **REQUIRED**. |
+| `lon` | Longtitude value from your location to show UV index.<br><br>This is **REQUIRED**. |
+| `animationSpeed` | Speed of the update animation. (milliseconds)<br><br>**Possible values:** `0` to `5000`<br>**Default value:** `1000` (1 second) |
+| `colors` | Makes UV scale name colorful<br><br>**Possible values:** `true` or `false`<br>**Default value:** `true` |
+| `updateInterval` | How often would you like to update data? (miliseconds)<br><br>**Default value:** `360000` (1 hour)<br>[Used Scale](https://www.epa.gov/sunsafety/uv-index-scale-1)|
 
 ## Supported languages
 
