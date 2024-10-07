@@ -42,9 +42,10 @@ You may want to set the following options in the config section as well:
 
 ## Supported languages
 
-- English
-- Dutch
-- Polish
+- de - German
+- en - English
+- nl - Dutch
+- pl - Polish
 
 Feel free to open new issue and submit translation for your language!
 

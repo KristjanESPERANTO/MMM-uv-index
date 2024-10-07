@@ -31,7 +31,9 @@ Module.register("MMM-uv-index", {
 
     getTranslations: function() {
         return {
+            de: 'translations/de.json',
             en: 'translations/en.json',
+            nl: 'translations/nl.json',
             pl: 'translations/pl.json'
         }
     },
@@ -113,7 +115,7 @@ Module.register("MMM-uv-index", {
         return "";
     },
 
-    updateUV: function() {
+    updateUV: async function() {
         if (this.config.appid === "") {
             Log.error("Currentuv: APPID not set!");
             return;
