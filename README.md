@@ -1,15 +1,29 @@
 # MMM-uv-index
 
-UV Index from openweathermap.org for [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror).
+MMM-uv-index is a module for [MagicMirror²](https://github.com/MagicMirrorOrg/MagicMirror) to display the UV index from openweathermap.org for your loaction.
 
 ![screenshot](image.png)
 
-## Usage 
+## Requirement
 
-To use this module, go to the *modules* subfolder of your mirror and clone this repository. You will need a subscription to the Openweathermap OneCall API 3.0. The first 1000 calls are free, so personal use should incur no cost. Set the rate limit to 999 per day to make sure you don't get charged, even if the module or MagicMirror were to get stuck in a loop somehow.
+You will need a subscription to the OpenWeather One Call API 3.0. The first 1000 calls are free, so there should be no cost for personal use. Set the rate limit to 999 per day to make sure you don't get charged even if the module or MagicMirror somehow gets stuck in a loop.
+
+## Installation
+
+To use this module, go to the *modules* directory of your mirror and clone this repository.
 
 ```bash
+cd ~/MagicMirror/modules
 git clone https://github.com/thariq-shanavas/MMM-uv-index
+```
+
+## Update
+
+Just enter the modules's directory and pull the new version of the module:
+
+```bash
+cd ~/MagicMirror/modules/MMM-uv-index
+git pull
 ```
 
 ## Configuration
@@ -51,8 +65,6 @@ You may want to set the following options in the config section as well:
 
 Feel free to open new issue and submit translation for your language!
 
-## Known Issues
-
 ## Changelog
 
 ### 2.0.0 - 03.07.2023
@@ -66,4 +78,4 @@ Feel free to open new issue and submit translation for your language!
 
 ### 1.0.0 - 03.05.2018
 
-- First working version of module
+- First working version
