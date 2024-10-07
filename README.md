@@ -67,6 +67,18 @@ Feel free to open new issue and submit translation for your language!
 
 ## Changelog
 
+### 2.1.0 - 07.10.2024
+
+- Replace XMLHttpRequest with fetch
+- Enable dutch translation
+- Add german translation
+- Optimize README
+- var -> let/const
+- Better misconfiguration handling
+- Shorthand methods
+- Add package.json
+- and some other minor changes
+
 ### 2.0.0 - 03.07.2023
 
 - Update to OneCall API 3.0
