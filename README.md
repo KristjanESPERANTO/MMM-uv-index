@@ -12,23 +12,25 @@ To use this module, go to the *modules* subfolder of your mirror and clone this 
 git clone https://github.com/thariq-shanavas/MMM-uv-index
 ```
 
-### Configuration
+## Configuration
 
-To run the module, you need to add the following data to your config.js file.
+To run the module, you need to add the following data to your `config.js` file.
 
 ```js
-{
-  module: 'MMM-uv-index',
-  position: 'bottom_right',
-  header: 'Current UV Index',
-  config: {
-    lat: 52.229771, // lattitude http://openweathermap.org/help/city_list.txt
-    lon: 21.011780, // longtitude, Warsaw
-    appid: 'xyz', // openweathermap.org api key
-    colors: true,
-  }
-}
+    {
+      module: 'MMM-uv-index',
+      position: 'bottom_right',
+      header: 'Current UV Index',
+      config: {
+        lat: 52.229771, // lattitude
+        lon: 21.011780, // longtitude, Warsaw
+        appid: 'xyz',   // openweathermap.org API key
+        colors: true,
+      }
+    },
 ```
+
+### Configuration options
 
 You may want to set the following options in the config section as well:
 
